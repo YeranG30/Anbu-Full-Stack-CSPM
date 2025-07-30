@@ -72,18 +72,18 @@
 - "Remediate Now" button (future)
 
 ---
+---
 
-## CLI Preview
+## 🚧 Status & Next Steps
 
-```bash
-# Scan IAM configs
-anbu scan --module iam --provider gcp
+This is an active work-in-progress. My current focus is:
 
-# Check for public exposure (e.g., 0.0.0.0/0)
-anbu scan --module exposure --provider aws
+- Completing the Terraform remediation generator
+- Connecting the FastAPI backend to the React dashboard
+- Adding filtering and export features
 
-# View findings
-anbu findings list --filter severity=high
+Everything is being built to simulate a real-world CSPM product, with a focus on IAM, public exposure, and policy-as-code.
 
-# Export
-anbu export --format json
+🛠️ Feedback, ideas, or contributions welcome!
+
+MIT License
